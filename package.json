@@ -1,13 +1,10 @@
 {
-  "homepage": "http://saulvg1.github.io/ignite",
   "name": "ignite",
   "version": "0.1.0",
   "description": "devEd course redux",
   "repository": {},
   "license": "MIT",
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build",
     "start": "vite",
     "build": "vite build"
   },

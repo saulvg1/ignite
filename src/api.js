@@ -34,7 +34,7 @@ const nextYear = `${currentYear + 1}-${currentMonth}-${currentDay}`;
 const itemsPerPage = 10;
 //popular games
 //key
-const key = process.env.REACT_APP_API_KEY;
+const key = '2e3bb90ad51c4ca1bb8d4e749bc59bc6';
 const popular_games = `games?key=${key}&dates=${lastYear},${currentDate}&ordering=-rating&page_size=${itemsPerPage}`;
 const upcoming_games = `games?key=${key}&dates=${currentDate},${nextYear}&ordering=-added&page_size=${itemsPerPage}`;
 const newGames = `games?dates=${lastYear},${currentDate}&ordering=-released&page_size=${itemsPerPage}`;
