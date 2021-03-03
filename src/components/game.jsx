@@ -1,23 +1,23 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
-//styling and animation
+//Styling and Animation
 import styled from 'styled-components';
 import { motion } from 'framer-motion';
-import { popup } from '../animations.js';
-//redux
+//Redux
 import { useDispatch } from 'react-redux';
 import loadDetail from '../actions/detailAction';
-//imports
-import { smallImage } from '../util.js';
+import { Link } from 'react-router-dom';
+import { smallImage } from '../util';
+import { popup } from '../animations';
 
 const Game = ({ name, released, image, id }) => {
   const stringPathId = id.toString();
-  //load details loadDetailHandler
+  //Load Detail Handler
   const dispatch = useDispatch();
   const loadDetailHandler = () => {
     document.body.style.overflow = 'hidden';
     dispatch(loadDetail(id));
   };
+
   return (
     <StyledGame
       variants={popup}
